@@ -42,5 +42,5 @@ for i in range (1, len(entries)):
         port_dictionary['Description'] = entries[i]('td')[5].text.rstrip('\n')
     port_descriptions.append(port_dictionary)
     with open('port_descriptions.txt', 'a') as file:
-        file.write(str(port_dictionary) + '\n')
+        file.write(str(port_dictionary) + ',\n')
 
